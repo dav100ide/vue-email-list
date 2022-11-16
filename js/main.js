@@ -6,17 +6,14 @@ createApp({
          mails: [],
       };
    },
-   methods: {
-      // metodi vue
-   },
+
    created() {
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 10; i++) {
          axios
             .get('https://flynn.boolean.careers/exercises/api/random/mail') //
             .then((response) => {
                const mail = response.data.response;
                this.mails.push(mail);
-               console.log(mail);
             });
       }
    },
