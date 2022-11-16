@@ -11,9 +11,11 @@
    commons
 ==================== */
 body {
-   background-color: #111;
-   color: rgb(200, 200, 200);
+   background-color: #d9afd9;
+   background-image: linear-gradient(180deg, #d9afd9 0%, #97d9e1 50%, #78c1d6 100%);
+   height: 100vh;
 }
+
 .container {
    max-width: 62.5rem;
    margin: 0 auto;
@@ -36,6 +38,11 @@ h1 {
 
 .mail-list li {
    font-family: Arial, Helvetica, sans-serif;
+}
+
+:is(.mail-list li, h1)::selection {
+   background-color: yellow;
+   color: blue;
 }
 
 .mail-list li:not(:last-child) {
