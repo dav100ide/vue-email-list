@@ -16,7 +16,10 @@
    <body>
       <div id="app" class="container">
          <h1>stampo {{maxNum}} mail da un API</h1>
-         <ul v-if="mails.length === maxNum" class="mail-list">
+
+         <button id="btn" @click="changeWritingMode">writing mode switcher</button>
+
+         <ul v-if="mails.length === maxNum" class="mail-list" :class="writingMode">
             <li v-for="mail in mails">{{mail}}</li>
          </ul>
       </div>

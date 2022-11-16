@@ -21,14 +21,41 @@ body {
    margin: 0 auto;
    padding: 1rem;
 }
-
+/* ===============
+   typography
+==================== */
+.vertical-mode {
+   writing-mode: vertical-rl;
+}
 /* titolo */
 h1 {
    font-size: 2.5rem;
    text-transform: uppercase;
    text-align: center;
-   margin-bottom: 1rem;
+   margin-block-end: 1rem;
    font-family: cursive;
+}
+/* btn */
+
+#btn {
+   position: relative;
+   left: 50%;
+   translate: -50%;
+   padding: 0.5rem;
+   border-radius: 0.8rem;
+   font-size: large;
+   margin-block: 1rem;
+   cursor: pointer;
+   transition: all 0.4s;
+}
+
+#btn:hover {
+   scale: 1.1;
+   background-color: #222;
+   color: #eee;
+}
+#btn:active {
+   translate: -50% -2px;
 }
 /* mail list */
 .mail-list {
@@ -46,5 +73,5 @@ h1 {
 }
 
 .mail-list li:not(:last-child) {
-   margin-bottom: 0.6rem;
+   margin-block-end: 0.6rem;
 }
