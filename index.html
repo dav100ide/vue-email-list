@@ -14,9 +14,9 @@
       <link rel="stylesheet" href="css/style.css" />
    </head>
    <body>
-      <div id="app">
+      <div id="app" class="container">
          <h1>stampo {{maxNum}} mail da un API</h1>
-         <ul v-if="mails.length === maxNum">
+         <ul v-if="mails.length === maxNum" class="mail-list">
             <li v-for="mail in mails">{{mail}}</li>
          </ul>
       </div>
